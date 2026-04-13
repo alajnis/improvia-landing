@@ -1,0 +1,417 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Impruv.ia — Consultoría Operativa y Gerencial</title>
+  <meta name="description" content="Impruv.ia ayuda a empresas y emprendimientos a ordenar su operación, automatizar procesos, incorporar nuevas tecnologías y tomar decisiones con información concreta. Diagnóstico sin costo." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500;0,9..40,600;1,9..40,300&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- NAVBAR -->
+  <header class="navbar" id="navbar">
+    <div class="container nav-inner">
+      <a href="#" class="logo">Impruv.ia</a>
+      <nav class="nav-links">
+        <a href="#problemas">Desafíos</a>
+        <a href="#servicios">Servicios</a>
+        <a href="#resultados">Resultados</a>
+        <a href="#nosotros">Nosotros</a>
+      </nav>
+      <a href="#contacto" class="btn btn-primary btn-sm">Agendar diagnóstico</a>
+      <button class="theme-toggle" id="themeToggle" aria-label="Cambiar tema" title="Cambiar a modo claro">
+        <svg class="icon-moon" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 12.79A9 9 0 1111.21 3 7 7 0 0021 12.79z"/></svg>
+        <svg class="icon-sun" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" style="display:none"><circle cx="12" cy="12" r="5"/><line x1="12" y1="1" x2="12" y2="3"/><line x1="12" y1="21" x2="12" y2="23"/><line x1="4.22" y1="4.22" x2="5.64" y2="5.64"/><line x1="18.36" y1="18.36" x2="19.78" y2="19.78"/><line x1="1" y1="12" x2="3" y2="12"/><line x1="21" y1="12" x2="23" y2="12"/><line x1="4.22" y1="19.78" x2="5.64" y2="18.36"/><line x1="18.36" y1="5.64" x2="19.78" y2="4.22"/></svg>
+      </button>
+      <button class="nav-toggle" id="navToggle" aria-label="Abrir menú">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </header>
+
+  <!-- HERO -->
+  <section class="hero" id="inicio">
+    <div class="hero-bg">
+      <div class="hero-grid"></div>
+      <div class="hero-glow"></div>
+    </div>
+    <div class="container hero-content">
+      <div class="hero-badge reveal">Consultoría operativa y gerencial</div>
+      <h1 class="hero-title reveal">
+        <em>Resultados reales.</em><br />
+        Más innovación. Transformación.<br />
+        Nuevas tecnologías.<br />
+        Menos costos. Más control.
+      </h1>
+      <p class="hero-subtitle reveal">
+        Ayudamos a tu empresa o emprendimiento a ordenar su operación, automatizar lo que sobra y tomar decisiones con información concreta — sin vueltas.
+      </p>
+      <div class="hero-cta reveal">
+        <a href="#contacto" class="btn btn-primary btn-lg" id="hero-cta-primary">Agendar diagnóstico gratuito</a>
+      </div>
+      <div class="hero-stats reveal">
+        <div class="stat">
+          <span class="stat-num">−30%</span>
+          <span class="stat-label">reducción de costos operativos promedio</span>
+        </div>
+        <div class="stat-divider"></div>
+        <div class="stat">
+          <span class="stat-num">−60%</span>
+          <span class="stat-label">en tareas manuales repetitivas</span>
+        </div>
+        <div class="stat-divider"></div>
+        <div class="stat">
+          <span class="stat-num">+Claridad</span>
+          <span class="stat-label">financiera y operativa desde el día uno</span>
+        </div>
+      </div>
+    </div>
+    <div class="hero-scroll-hint">
+      <span>Scroll</span>
+      <div class="scroll-line"></div>
+    </div>
+  </section>
+
+  <!-- PROBLEMAS -->
+  <section class="section problems" id="problemas">
+    <div class="container">
+      <div class="section-header reveal">
+        <span class="section-tag">El problema que conocemos</span>
+        <h2 class="section-title">¿Te suena familiar alguna de estas situaciones?</h2>
+        <p class="section-desc">La mayoría de las PYMEs crecen cargando problemas que les sacan rentabilidad y energía todos los días.</p>
+      </div>
+      <div class="problems-grid">
+        <div class="problem-card reveal" style="--delay: 0ms">
+          <div class="problem-icon">⚙</div>
+          <h3>Todo es manual</h3>
+          <p>Tu equipo dedica horas a tareas repetitivas que podrían automatizarse. El tiempo se va en procesos, no en resultados.</p>
+        </div>
+        <div class="problem-card reveal" style="--delay: 80ms">
+          <div class="problem-icon">📊</div>
+          <h3>Poca visibilidad financiera</h3>
+          <p>No sabés exactamente en qué se va la plata ni cuánto te cuesta cada proceso. Las decisiones se toman a ciegas.</p>
+        </div>
+        <div class="problem-card reveal" style="--delay: 160ms">
+          <div class="problem-icon">🔀</div>
+          <h3>Desorden operativo</h3>
+          <p>No hay procesos claros, cada uno hace las cosas a su manera y el caos crece a medida que la empresa escala.</p>
+        </div>
+        <div class="problem-card reveal" style="--delay: 240ms">
+          <div class="problem-icon">💸</div>
+          <h3>Costos difíciles de controlar</h3>
+          <p>Los gastos suben sin que quede claro por qué. El margen se achica y es difícil encontrar dónde ajustar.</p>
+        </div>
+        <div class="problem-card reveal problem-card--ia" style="--delay: 320ms">
+          <div class="problem-icon">🤖</div>
+          <h3>IA y nuevas tecnologías sin adoptar</h3>
+          <p>El mundo cambió. Tu competencia ya usa IA. Si tu empresa no incorpora estas herramientas estratégicamente, queda atrás.</p>
+        </div>
+        <div class="problem-card reveal" style="--delay: 400ms">
+          <div class="problem-icon">📉</div>
+          <h3>Rentabilidad que no crece</h3>
+          <p>Las ventas crecen pero la ganancia no sigue el mismo ritmo. Algo se está perdiendo en el camino.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SOLUCIÓN -->
+  <section class="section solution" id="solucion">
+    <div class="container solution-inner solution-single">
+      <div class="solution-text reveal">
+        <span class="section-tag">Lo que hacemos</span>
+        <h2 class="section-title">Transformamos problemas operativos en ventajas competitivas</h2>
+        <p class="solution-lead">
+          En Impruv.ia entramos a la empresa, entendemos cómo funciona realmente y trabajamos junto al equipo para ordenar, simplificar y mejorar — sin fórmulas genéricas.
+        </p>
+        <ul class="solution-list">
+          <li>
+            <span class="check">✓</span>
+            <div>
+              <strong>Diagnóstico real desde adentro</strong>
+              <p>No hacemos recomendaciones desde afuera. Entendemos tu operación, tus números y tus restricciones antes de proponer cualquier cambio.</p>
+            </div>
+          </li>
+          <li>
+            <span class="check">✓</span>
+            <div>
+              <strong>Soluciones que se pueden implementar</strong>
+              <p>Cada mejora es concreta, acotada y adaptada a tu realidad. Sin proyectos imposibles ni consultoras que desaparecen después del informe.</p>
+            </div>
+          </li>
+          <li>
+            <span class="check">✓</span>
+            <div>
+              <strong>Resultados medibles desde el primer mes</strong>
+              <p>Trabajamos con métricas claras. Sabés exactamente qué estamos logrando, cuánto estás ahorrando y qué viene después.</p>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- SERVICIOS -->
+  <section class="section services" id="servicios">
+    <div class="container">
+      <div class="section-header reveal">
+        <span class="section-tag">Nuestros servicios</span>
+        <h2 class="section-title">Cuatro áreas de trabajo, un solo objetivo: mejorar tu empresa</h2>
+      </div>
+      <div class="services-grid">
+        <div class="service-card reveal" style="--delay: 0ms" id="serv-automatizacion">
+          <div class="service-num">01</div>
+          <div class="service-icon-wrap">
+            <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M12 2L2 7l10 5 10-5-10-5z"/><path d="M2 17l10 5 10-5"/><path d="M2 12l10 5 10-5"/></svg>
+          </div>
+          <h3>Automatización de procesos</h3>
+          <p>Identificamos las tareas repetitivas que consumen tiempo y las automatizamos con herramientas accesibles y sin necesidad de IT complejo.</p>
+          <div class="service-benefit">
+            <span class="benefit-tag">Beneficio concreto:</span>
+            <span>Tu equipo se enfoca en trabajo de valor. Las tareas rutinarias se ejecutan solas — sin errores humanos.</span>
+          </div>
+        </div>
+        <div class="service-card reveal" style="--delay: 100ms" id="serv-costos">
+          <div class="service-num">02</div>
+          <div class="service-icon-wrap">
+            <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+          </div>
+          <h3>Reducción de costos</h3>
+          <p>Analizamos en detalle tu estructura de costos y encontramos ineficiencias ocultas que están afectando tu margen sin que te hayas dado cuenta.</p>
+          <div class="service-benefit">
+            <span class="benefit-tag">Beneficio concreto:</span>
+            <span>Mejora de rentabilidad sin sacrificar calidad ni capacidad. Ahorro real y sostenible en el tiempo.</span>
+          </div>
+        </div>
+        <div class="service-card reveal" style="--delay: 200ms" id="serv-financiero">
+          <div class="service-num">03</div>
+          <div class="service-icon-wrap">
+            <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M18 20V10"/><path d="M12 20V4"/><path d="M6 20v-6"/></svg>
+          </div>
+          <h3>Optimización financiera</h3>
+          <p>Implementamos tableros de control, análisis de rentabilidad por línea de negocio y herramientas para que tomes decisiones con datos, no con intuición.</p>
+          <div class="service-benefit">
+            <span class="benefit-tag">Beneficio concreto:</span>
+            <span>Sabés en tiempo real cuánto ganás, en qué perdés y dónde están las oportunidades de mejora.</span>
+          </div>
+        </div>
+        <div class="service-card reveal" style="--delay: 300ms" id="serv-operativa">
+          <div class="service-num">04</div>
+          <div class="service-icon-wrap">
+            <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><circle cx="12" cy="12" r="3"/><path d="M19.07 4.93a10 10 0 010 14.14M4.93 4.93a10 10 0 000 14.14"/></svg>
+          </div>
+          <h3>Mejora operativa</h3>
+          <p>Documentamos procesos, definimos roles claros y armamos la estructura para que la empresa funcione bien con o sin el dueño presente todo el tiempo.</p>
+          <div class="service-benefit">
+            <span class="benefit-tag">Beneficio concreto:</span>
+            <span>Operación más ordenada, equipos más autónomos y una empresa que puede crecer sin romperse.</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- IA & TRANSFORMACIÓN -->
+  <section class="section ia-section" id="ia-transformacion">
+    <div class="ia-bg">
+      <div class="ia-glow-left"></div>
+      <div class="ia-glow-right"></div>
+    </div>
+    <div class="container">
+      <div class="ia-header reveal">
+        <span class="section-tag ia-tag">IA · Upskilling · Transformación</span>
+        <h2 class="section-title ia-title">Incorporamos inteligencia artificial
+          <em> a tu empresa — en serio.</em>
+        </h2>
+        <p class="section-desc ia-desc">
+          No hablamos de IA como concepto. Te ayudamos a adoptarla de forma concreta: en tus procesos, en tu equipo y en tu estrategia de crecimiento.
+        </p>
+      </div>
+      <div class="ia-grid">
+        <div class="ia-card ia-card--main reveal" style="--delay: 0ms">
+          <div class="ia-card-icon">🤖</div>
+          <h3>Automatización con IA</h3>
+          <p>Identificamos qué procesos de tu empresa pueden ser acelerados o automatizados con herramientas de IA — sin necesidad de un equipo técnico.</p>
+          <ul class="ia-list">
+            <li>Generación de reportes y análisis automáticos</li>
+            <li>Automatización de tareas repetitivas con IA</li>
+            <li>Integración de asistentes y agentes inteligentes</li>
+          </ul>
+        </div>
+        <div class="ia-card reveal" style="--delay: 120ms">
+          <div class="ia-card-icon">📚</div>
+          <h3>Upskilling de tu equipo</h3>
+          <p>Capacitamos a tu equipo para que use IA como herramienta real de trabajo — no como curiosidad tecnológica.</p>
+          <div class="ia-pill-group">
+            <span class="ia-pill">Prompting efectivo</span>
+            <span class="ia-pill">IA aplicada al rol</span>
+            <span class="ia-pill">Workflows aumentados</span>
+          </div>
+        </div>
+        <div class="ia-card reveal" style="--delay: 240ms">
+          <div class="ia-card-icon">🚀</div>
+          <h3>Roadmap de transformación</h3>
+          <p>Diseñamos junto a vos un plan de transformación digital realista: qué adoptar, en qué orden y con qué recursos.</p>
+          <div class="ia-pill-group">
+            <span class="ia-pill">Diagnóstico tech</span>
+            <span class="ia-pill">Priorización</span>
+            <span class="ia-pill">Implementación guiada</span>
+          </div>
+        </div>
+        <div class="ia-card reveal" style="--delay: 360ms">
+          <div class="ia-card-icon">📈</div>
+          <h3>Crecimiento basado en datos</h3>
+          <p>Implementamos tableros de decisión con IA que te permiten anticipar problemas y encontrar oportunidades antes que la competencia.</p>
+          <div class="ia-pill-group">
+            <span class="ia-pill">Dashboards inteligentes</span>
+            <span class="ia-pill">Alertas automáticas</span>
+            <span class="ia-pill">Insights accionables</span>
+          </div>
+        </div>
+      </div>
+      <div class="ia-cta reveal">
+        <a href="#contacto" class="btn btn-primary btn-lg">Quiero transformar mi empresa con IA →</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- RESULTADOS -->
+  <section class="section results" id="resultados">
+    <div class="container">
+
+      <div class="results-grid">
+        <div class="result-card reveal" style="--delay: 0ms">
+          <div class="result-value">20%–35%</div>
+          <div class="result-area">Reducción de costos operativos</div>
+          <p class="result-desc">Al identificar y eliminar ineficiencias estructurales que se acumulan con el tiempo sin que nadie las vea.</p>
+        </div>
+        <div class="result-card highlight reveal" style="--delay: 120ms">
+          <div class="result-value">40%–70%</div>
+          <div class="result-area">Menos tiempo en tareas manuales</div>
+          <p class="result-desc">Con automatizaciones simples y procesos bien definidos, tu equipo trabaja en lo que realmente importa.</p>
+        </div>
+        <div class="result-card reveal" style="--delay: 240ms">
+          <div class="result-value">+2 semanas</div>
+          <div class="result-area">De capacidad recuperada al mes</div>
+          <p class="result-desc">El tiempo que hoy se pierde en caos operativo se convierte en tiempo para vender, mejorar y crecer.</p>
+        </div>
+        <div class="result-card reveal" style="--delay: 360ms">
+          <div class="result-value">100%</div>
+          <div class="result-area">Visibilidad sobre números clave</div>
+          <p class="result-desc">Pasás de operar con intuición a tener dashboards claros con la información que necesitás para decidir.</p>
+        </div>
+      </div>
+      <p class="results-disclaimer reveal">* Rangos orientativos basados en proyectos en empresas de industria, servicios y comercio en Argentina. Los resultados dependen del punto de partida y contexto de cada empresa.</p>
+    </div>
+  </section>
+
+  <!-- NOSOTROS -->
+  <section class="section about" id="nosotros">
+    <div class="container about-inner about-single">
+      <div class="about-text reveal">
+        <span class="section-tag">Sobre Impruv.ia</span>
+        <h2 class="section-title">Experiencia real en negocios reales</h2>
+        <p>Impruv.ia nació de la convicción de que las empresas y emprendimientos argentinos necesitan consultoría a su medida y adaptada a su realidad.</p>
+        <p>Tenemos formación y experiencia en finanzas, operaciones y procesos empresariales. Entendemos los números, entendemos las restricciones del negocio y entendemos la presión del día a día de una empresa que quiere crecer pero no puede darse el lujo de cometer errores grandes o tener procesos operativos pesados.</p>
+        <p>Nuestro estilo de trabajo es directo y práctico. No trabajamos con marcos teóricos que suenan bien pero no se pueden implementar. Trabajamos con lo que funciona en la práctica, en empresas como la tuya.</p>
+        <div class="about-values">
+          <div class="value-item">
+            <span class="value-icon">01</span>
+            <span>Honestidad sobre lo que es posible y en qué tiempo</span>
+          </div>
+          <div class="value-item">
+            <span class="value-icon">02</span>
+            <span>Acompañamiento real durante toda la implementación</span>
+          </div>
+          <div class="value-item">
+            <span class="value-icon">03</span>
+            <span>Sin soluciones genéricas — cada empresa es diferente</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA FINAL -->
+  <section class="section cta-section" id="contacto">
+    <div class="cta-bg">
+      <div class="cta-grid"></div>
+    </div>
+    <div class="container cta-inner reveal">
+      <span class="cta-tag">¿Listo para empezar?</span>
+      <h2 class="cta-title">Agendá un diagnóstico sin costo</h2>
+      <p class="cta-desc">
+        La primera reunión es gratuita y sin compromiso. En 60 minutos identificamos juntos los principales problemas de tu operación y te decimos qué haríamos para resolverlos.
+      </p>
+      <div class="cta-value-points">
+        <span>✓ Sin costo inicial</span>
+        <span>✓ Sin compromiso de continuidad</span>
+        <span>✓ Diagnóstico concreto desde la primera reunión</span>
+      </div>
+      <form class="contact-form" id="contactForm">
+        <div class="form-row">
+          <div class="form-group">
+            <label for="nombre">Nombre y empresa</label>
+            <input type="text" id="nombre" name="nombre" placeholder="Tu nombre · Nombre de empresa" required />
+          </div>
+          <div class="form-group">
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" placeholder="tu@empresa.com" required />
+          </div>
+        </div>
+        <div class="form-group">
+          <label for="mensaje">¿Cuál es tu principal desafío operativo hoy?</label>
+          <textarea id="mensaje" name="mensaje" rows="4" placeholder="Contanos brevemente qué problema querés resolver..."></textarea>
+        </div>
+        <button type="submit" class="btn btn-primary btn-lg btn-full" id="submit-form">
+          Quiero mi diagnóstico gratuito →
+        </button>
+        <p class="form-note">Te respondemos en menos de 24 horas hábiles.</p>
+      </form>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="container footer-inner">
+      <div class="footer-brand">
+        <a href="#" class="logo">Impruv.ia</a>
+        <p>Consultoría operativa y gerencial.<br />Resultados concretos, metodología probada.</p>
+        <div class="footer-location">📍 Argentina</div>
+      </div>
+      <div class="footer-links">
+        <h4>Servicios</h4>
+        <a href="#serv-automatizacion">Automatización de procesos</a>
+        <a href="#serv-costos">Reducción de costos</a>
+        <a href="#serv-financiero">Optimización financiera</a>
+        <a href="#serv-operativa">Mejora operativa</a>
+      </div>
+      <div class="footer-links">
+        <h4>Empresa</h4>
+        <a href="#resultados">Resultados</a>
+        <a href="#nosotros">Sobre Impruv.ia</a>
+        <a href="#contacto">Contacto</a>
+      </div>
+      <div class="footer-contact">
+        <h4>Contacto</h4>
+        <a href="mailto:alajnis@gmail.com">alajnis@gmail.com</a>
+        <p class="footer-tagline">"Tu empresa puede funcionar mejor. Nosotros sabemos cómo."</p>
+        <a href="#contacto" class="btn btn-primary btn-sm footer-cta">Agendar diagnóstico</a>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <div class="container">
+        <span>© 2025 Impruv.ia · Todos los derechos reservados</span>
+        <span>Consultoría operativa y gerencial</span>
+      </div>
+    </div>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
