@@ -24,6 +24,22 @@
   --font-body: 'DM Sans', system-ui, sans-serif;
 }
 
+/* ===== CONSTELLATION BACKGROUND ===== */
+#impruvia-bg {
+  position: fixed;
+  inset: 0;
+  width: 100vw;
+  height: 100vh;
+  z-index: 0;
+  pointer-events: none;
+}
+
+/* Asegurar que las secciones principales queden por encima del canvas */
+header, section, footer {
+  position: relative;
+  z-index: 1;
+}
+
 /* ===== MODO CLARO ===== */
 html[data-theme="light"] {
   --bg:       #f5f4f0;

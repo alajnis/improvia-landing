@@ -306,3 +306,109 @@ if (window.matchMedia('(pointer: fine)').matches) {
   }
   animateCursor();
 }
+
+/* ===== CONSTELLATION BACKGROUND (Particles) ===== */
+(function () {
+  const canvas = document.getElementById("impruvia-bg");
+  if (!canvas) return;
+  const ctx = canvas.getContext("2d");
+
+  const ACCENT       = [201, 168, 76];   // #c9a84c
+  const ACCENT_LIGHT = [226, 196, 106];
+
+  const rgba = ([r,g,b], a=1) => `rgba(${r},${g},${b},${a})`;
+
+  let W = 0, H = 0;
+  let particles = [];
+  const DENSITY = 0.00009;
+  const MAX_LINK = 140;
+  const PUSH_DIST = 130;
+  const LINK_ALPHA = 0.55;
+  const LINE_WIDTH = 0.9;
+
+  const mouse = { x: -9999, y: -9999, active: false };
+  window.addEventListener("mousemove", e => {
+    mouse.x = e.clientX; mouse.y = e.clientY; mouse.active = true;
+  });
+  window.addEventListener("mouseleave", () => { mouse.active = false; });
+
+  function resize () {
+    W = canvas.width  = window.innerWidth;
+    H = canvas.height = window.innerHeight;
+    const count = Math.min(160, Math.max(60, Math.floor(W * H * DENSITY)));
+    particles = Array.from({ length: count }, () => ({
+      x: Math.random() * W,
+      y: Math.random() * H,
+      vx: (Math.random() - 0.5) * 0.25,
+      vy: (Math.random() - 0.5) * 0.25,
+      r: Math.random() * 1.4 + 0.4,
+    }));
+  }
+  window.addEventListener("resize", resize);
+  resize();
+
+  function frame () {
+    ctx.clearRect(0, 0, W, H);
+
+    for (const p of particles) {
+      if (mouse.active) {
+        const dx = p.x - mouse.x, dy = p.y - mouse.y;
+        const d2 = dx * dx + dy * dy;
+        if (d2 < PUSH_DIST * PUSH_DIST && d2 > 0.01) {
+          const f = (1 - d2 / (PUSH_DIST * PUSH_DIST)) * 0.6;
+          const inv = 1 / Math.sqrt(d2);
+          p.vx += dx * inv * f * 0.4;
+          p.vy += dy * inv * f * 0.4;
+        }
+      }
+      p.vx *= 0.98; p.vy *= 0.98;
+      p.x += p.vx; p.y += p.vy;
+      if (p.x < 0) p.x += W; else if (p.x > W) p.x -= W;
+      if (p.y < 0) p.y += H; else if (p.y > H) p.y -= H;
+    }
+
+    ctx.lineWidth = LINE_WIDTH;
+    for (let i = 0; i < particles.length; i++) {
+      const a = particles[i];
+      for (let j = i + 1; j < particles.length; j++) {
+        const b = particles[j];
+        const dx = a.x - b.x, dy = a.y - b.y;
+        const d2 = dx * dx + dy * dy;
+        if (d2 < MAX_LINK * MAX_LINK) {
+          const alpha = (1 - Math.sqrt(d2) / MAX_LINK) * LINK_ALPHA;
+          ctx.strokeStyle = rgba(ACCENT, alpha);
+          ctx.beginPath();
+          ctx.moveTo(a.x, a.y);
+          ctx.lineTo(b.x, b.y);
+          ctx.stroke();
+        }
+      }
+    }
+
+    if (mouse.active) {
+      ctx.lineWidth = 1.1;
+      for (const p of particles) {
+        const dx = p.x - mouse.x, dy = p.y - mouse.y;
+        const d2 = dx * dx + dy * dy;
+        if (d2 < 220 * 220) {
+          const alpha = (1 - Math.sqrt(d2) / 220) * 0.8;
+          ctx.strokeStyle = rgba(ACCENT_LIGHT, alpha);
+          ctx.beginPath();
+          ctx.moveTo(p.x, p.y);
+          ctx.lineTo(mouse.x, mouse.y);
+          ctx.stroke();
+        }
+      }
+    }
+
+    for (const p of particles) {
+      ctx.fillStyle = rgba(ACCENT_LIGHT, 0.95);
+      ctx.beginPath();
+      ctx.arc(p.x, p.y, p.r + 0.3, 0, Math.PI * 2);
+      ctx.fill();
+    }
+
+    requestAnimationFrame(frame);
+  }
+  frame();
+})();
