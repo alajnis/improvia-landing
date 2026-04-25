@@ -1181,12 +1181,6 @@ input:focus, textarea:focus {
   color: var(--text-muted);
   text-decoration: none;
 }
-.footer-tagline {
-  font-size: 0.82rem;
-  font-style: italic;
-  color: var(--text-dim);
-  line-height: 1.5;
-}
 
 .footer-cta { margin-top: 4px; align-self: flex-start; }
 
@@ -1213,30 +1207,33 @@ input:focus, textarea:focus {
   .nav-links { display: none; }
   .nav-inner > .btn-primary { display: none; }
   .nav-toggle { display: flex; }
-
-  /* Mobile nav */
-  .nav-links.open {
-    display: flex;
-    position: fixed;
-    top: 0; left: 0; right: 0; bottom: 0;
+  .navbar { overflow: visible; }
+  .nav-inner { position: relative; }
+  .nav-links {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    right: 0;
+    background: var(--bg-card);
+    padding: 30px;
     flex-direction: column;
     align-items: center;
-    justify-content: center;
-    gap: 36px;
-    background: var(--bg);
-    z-index: 200;
-    font-size: 1.4rem;
+    gap: 20px;
+    border-bottom: 1px solid var(--border);
+    box-shadow: 0 10px 30px rgba(0,0,0,0.3);
+    z-index: 100;
   }
-  .nav-links.open a { font-size: 1.4rem; color: var(--text); }
-  .nav-links.open::after {
-    content: '';
-    position: fixed;
-    top: 24px; right: 24px;
-    width: 32px;
-    height: 32px;
-    background: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='none' viewBox='0 0 24 24' stroke='%23e8edf5' stroke-width='2'%3E%3Cpath stroke-linecap='round' stroke-linejoin='round' d='M6 18L18 6M6 6l12 12'/%3E%3C/svg%3E") center/cover;
-    cursor: pointer;
+  .nav-links.open {
+    display: flex;
+    animation: slideDown 0.3s ease forwards;
   }
+  @keyframes slideDown {
+    from { transform: translateY(-10px); opacity: 0; }
+    to { transform: translateY(0); opacity: 1; }
+  }
+  .nav-links a { font-size: 1.1rem; color: var(--text); }
+  .nav-links::after { display: none; }
 
   .hero-stats {
     flex-direction: column;
@@ -1259,8 +1256,13 @@ input:focus, textarea:focus {
 
   .form-row { grid-template-columns: 1fr; }
 
-  .ia-grid { grid-template-columns: 1fr; }
+  .ia-grid { grid-template-columns: 1fr; gap: 16px; }
+  .ia-card { padding: 30px 24px; }
+  .ia-header { margin-bottom: 32px; }
+
   .success-grid { grid-template-columns: 1fr; }
+  .success-card { padding: 24px; }
+
   .footer-inner { grid-template-columns: 1fr; gap: 36px; }
   .footer-bottom .container { flex-direction: column; gap: 6px; text-align: center; }
 }
