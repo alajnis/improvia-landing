@@ -1259,6 +1259,8 @@ input:focus, textarea:focus {
 
   .form-row { grid-template-columns: 1fr; }
 
+  .ia-grid { grid-template-columns: 1fr; }
+  .success-grid { grid-template-columns: 1fr; }
   .footer-inner { grid-template-columns: 1fr; gap: 36px; }
   .footer-bottom .container { flex-direction: column; gap: 6px; text-align: center; }
 }
