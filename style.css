@@ -19,7 +19,7 @@
   --radius-lg: 20px;
   --shadow:   0 4px 32px rgba(0,0,0,0.4);
   --shadow-card: 0 2px 20px rgba(0,0,0,0.3);
-  --section-gap: 120px;
+  --section-gap: 60px;
   --font-display: 'DM Serif Display', Georgia, serif;
   --font-body: 'DM Sans', system-ui, sans-serif;
 }
