@@ -332,15 +332,14 @@ p { color: var(--text-muted); }
 }
 
 .hero-badge {
-  display: inline-flex;
-  align-items: center;
-  gap: 8px;
-  font-size: 0.78rem;
+  display: block;
+  font-size: 0.72rem;
   font-weight: 500;
-  letter-spacing: 0.1em;
+  letter-spacing: 0.12em;
   text-transform: uppercase;
   color: var(--accent);
-  margin-bottom: 28px;
+  margin-bottom: 32px;
+  line-height: 1.8;
 }
 .hero-badge::before {
   content: '';
@@ -351,7 +350,7 @@ p { color: var(--text-muted); }
 }
 
 .hero-title {
-  font-size: clamp(3rem, 6vw, 5.5rem);
+  font-size: clamp(2.2rem, 5vw, 4.2rem);
   line-height: 1.06;
   color: var(--text);
   margin-bottom: 28px;
