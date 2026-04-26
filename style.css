@@ -1297,3 +1297,57 @@ input:focus, textarea:focus {
   .process-step { grid-template-columns: 50px 24px 1fr; gap: 12px; }
   .step-num { font-size: 1.6rem; }
 }
+
+/* ===== MODAL ===== */
+.modal {
+  position: fixed;
+  inset: 0;
+  display: none;
+  align-items: center;
+  justify-content: center;
+  z-index: 2000;
+  padding: 20px;
+}
+.modal.open { display: flex; }
+
+.modal-backdrop {
+  position: absolute;
+  inset: 0;
+  background: rgba(11,15,20,0.85);
+  backdrop-filter: blur(8px);
+}
+
+.modal-content {
+  position: relative;
+  background: var(--bg-card);
+  width: 100%;
+  max-width: 600px;
+  padding: 48px;
+  border-radius: var(--radius-lg);
+  border: 1px solid var(--border-h);
+  box-shadow: 0 20px 50px rgba(0,0,0,0.5);
+  z-index: 2001;
+}
+
+.modal-close {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  background: none;
+  border: none;
+  color: var(--text-muted);
+  font-size: 2rem;
+  cursor: pointer;
+  line-height: 1;
+  transition: color 0.2s;
+}
+.modal-close:hover { color: var(--text); }
+
+.modal-header { margin-bottom: 32px; }
+.modal-title { font-size: 1.8rem; margin-bottom: 12px; }
+.modal-desc { color: var(--text-muted); font-size: 0.95rem; }
+
+@media (max-width: 520px) {
+  .modal-content { padding: 32px 24px; }
+  .modal-title { font-size: 1.5rem; }
+}

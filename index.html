@@ -23,7 +23,7 @@
         <a href="#resultados">Resultados</a>
         <a href="#casos-exito">Casos</a>
       </nav>
-      <a href="#contacto" class="btn btn-primary btn-sm">Agendar diagnóstico</a>
+      <a href="javascript:void(0)" class="btn btn-primary btn-sm open-modal-btn">Agendar diagnóstico</a>
       <button class="theme-toggle" id="themeToggle" aria-label="Cambiar tema" title="Cambiar a modo claro">
         <svg class="icon-moon" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 12.79A9 9 0 1111.21 3 7 7 0 0021 12.79z"/></svg>
         <svg class="icon-sun" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" style="display:none"><circle cx="12" cy="12" r="5"/><line x1="12" y1="1" x2="12" y2="3"/><line x1="12" y1="21" x2="12" y2="23"/><line x1="4.22" y1="4.22" x2="5.64" y2="5.64"/><line x1="18.36" y1="18.36" x2="19.78" y2="19.78"/><line x1="1" y1="12" x2="3" y2="12"/><line x1="21" y1="12" x2="23" y2="12"/><line x1="4.22" y1="19.78" x2="5.64" y2="18.36"/><line x1="18.36" y1="5.64" x2="19.78" y2="4.22"/></svg>
@@ -55,7 +55,7 @@
         Ayudamos a tu empresa o emprendimiento a ordenar su operación, automatizar lo que sobra y tomar decisiones con información concreta, sin vueltas.
       </p>
       <div class="hero-cta reveal">
-        <a href="#contacto" class="btn btn-primary btn-lg" id="hero-cta-primary">Agendar diagnóstico gratuito</a>
+        <a href="javascript:void(0)" class="btn btn-primary btn-lg open-modal-btn">Agendar diagnóstico gratuito</a>
       </div>
 
     </div>
@@ -343,13 +343,15 @@
 
 
 
-  <!-- CTA FINAL -->
-  <section class="section cta-section" id="contacto">
-    <div class="cta-bg">
-      <div class="cta-grid"></div>
-    </div>
-    <div class="container cta-inner reveal">
-
+  <!-- MODAL DE CONTACTO -->
+  <div class="modal" id="contactModal">
+    <div class="modal-backdrop"></div>
+    <div class="modal-content reveal">
+      <button class="modal-close" id="closeModal" aria-label="Cerrar modal">&times;</button>
+      <div class="modal-header">
+        <h2 class="modal-title">Agendá un diagnóstico sin costo</h2>
+        <p class="modal-desc">Contanos brevemente sobre tu empresa y nos pondremos en contacto.</p>
+      </div>
       <form class="contact-form" id="contactForm">
         <div class="form-row">
           <div class="form-group">
@@ -371,7 +373,7 @@
         <p class="form-note">Te respondemos en menos de 24 horas hábiles.</p>
       </form>
     </div>
-  </section>
+  </div>
 
   <!-- FOOTER -->
   <footer class="footer">
@@ -400,7 +402,7 @@
         <h4>Contacto</h4>
         <a href="mailto:alajnis@gmail.com">alajnis@gmail.com</a>
 
-        <a href="#contacto" class="btn btn-primary btn-sm footer-cta">Agendar diagnóstico</a>
+        <a href="javascript:void(0)" class="btn btn-primary btn-sm footer-cta open-modal-btn">Agendar diagnóstico</a>
       </div>
     </div>
     <div class="footer-bottom">

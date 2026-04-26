@@ -61,6 +61,42 @@ navLinks.querySelectorAll('a').forEach(link => {
 });
 
 
+/* ===== MODAL CONTACTO ===== */
+const contactModal = document.getElementById('contactModal');
+const openModalBtns = document.querySelectorAll('.open-modal-btn');
+const closeModalBtn = document.getElementById('closeModal');
+const modalBackdrop = contactModal.querySelector('.modal-backdrop');
+
+function openModal() {
+  contactModal.classList.add('open');
+  document.body.style.overflow = 'hidden';
+  // Disparar reveal dentro del modal
+  contactModal.querySelector('.modal-content').classList.add('visible');
+}
+
+function closeModal() {
+  contactModal.classList.remove('open');
+  document.body.style.overflow = '';
+}
+
+openModalBtns.forEach(btn => {
+  btn.addEventListener('click', (e) => {
+    e.preventDefault();
+    openModal();
+  });
+});
+
+closeModalBtn.addEventListener('click', closeModal);
+modalBackdrop.addEventListener('click', closeModal);
+
+// Cerrar con escape
+window.addEventListener('keydown', (e) => {
+  if (e.key === 'Escape' && contactModal.classList.contains('open')) {
+    closeModal();
+  }
+});
+
+
 /* ===== REVEAL ON SCROLL (Intersection Observer) ===== */
 const revealElements = document.querySelectorAll('.reveal');
 
