@@ -1150,14 +1150,21 @@ input:focus, textarea:focus {
 }
 .footer-brand p {
   font-size: 0.88rem;
-  line-height: 1.65;
-  margin-bottom: 12px;
+  line-height: 1.6;
+  color: var(--text-muted);
+}
+.footer-locations {
+  display: flex;
+  gap: 16px;
+  margin-top: 16px;
 }
 .footer-location {
-  font-size: 0.8rem;
-  color: var(--text-dim);
+  font-size: 0.82rem;
+  color: var(--text-muted);
+  display: flex;
+  align-items: center;
+  gap: 4px;
 }
-
 .footer-links {
   display: flex;
   flex-direction: column;
