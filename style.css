@@ -612,6 +612,8 @@ p { color: var(--text-muted); }
   padding: 44px 38px;
   transition: background 0.25s;
   position: relative;
+  display: flex;
+  flex-direction: column;
 }
 .service-card:hover { background: var(--bg-card2); }
 
@@ -645,6 +647,7 @@ p { color: var(--text-muted); }
   font-size: 0.82rem;
   color: var(--text-muted);
   line-height: 1.5;
+  margin-top: auto;
 }
 .benefit-tag {
   display: block;
