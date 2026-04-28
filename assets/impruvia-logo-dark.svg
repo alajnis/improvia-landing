@@ -1,0 +1,55 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 480 130" width="480" height="130">
+  <defs>
+    <linearGradient id="accentGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#00E5B4;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#00B8FF;stop-opacity:1" />
+    </linearGradient>
+    <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#0D1117;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#161B22;stop-opacity:1" />
+    </linearGradient>
+    <filter id="glow">
+      <feGaussianBlur stdDeviation="3" result="coloredBlur"/>
+      <feMerge>
+        <feMergeNode in="coloredBlur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+    <clipPath id="rc"><rect width="480" height="130" rx="12" ry="12"/></clipPath>
+  </defs>
+
+  <rect width="480" height="130" rx="12" ry="12" fill="url(#bgGrad)"/>
+
+  <!-- Grid texture -->
+  <g opacity="0.04" clip-path="url(#rc)">
+    <line x1="0" y1="20" x2="480" y2="20" stroke="#fff" stroke-width="0.5"/>
+    <line x1="0" y1="40" x2="480" y2="40" stroke="#fff" stroke-width="0.5"/>
+    <line x1="0" y1="60" x2="480" y2="60" stroke="#fff" stroke-width="0.5"/>
+    <line x1="0" y1="80" x2="480" y2="80" stroke="#fff" stroke-width="0.5"/>
+    <line x1="0" y1="100" x2="480" y2="100" stroke="#fff" stroke-width="0.5"/>
+    <line x1="0" y1="120" x2="480" y2="120" stroke="#fff" stroke-width="0.5"/>
+    <line x1="40" y1="0" x2="40" y2="130" stroke="#fff" stroke-width="0.5"/>
+    <line x1="80" y1="0" x2="80" y2="130" stroke="#fff" stroke-width="0.5"/>
+    <line x1="120" y1="0" x2="120" y2="130" stroke="#fff" stroke-width="0.5"/>
+    <line x1="160" y1="0" x2="160" y2="130" stroke="#fff" stroke-width="0.5"/>
+    <line x1="200" y1="0" x2="200" y2="130" stroke="#fff" stroke-width="0.5"/>
+    <line x1="240" y1="0" x2="240" y2="130" stroke="#fff" stroke-width="0.5"/>
+    <line x1="280" y1="0" x2="280" y2="130" stroke="#fff" stroke-width="0.5"/>
+    <line x1="320" y1="0" x2="320" y2="130" stroke="#fff" stroke-width="0.5"/>
+    <line x1="360" y1="0" x2="360" y2="130" stroke="#fff" stroke-width="0.5"/>
+    <line x1="400" y1="0" x2="400" y2="130" stroke="#fff" stroke-width="0.5"/>
+    <line x1="440" y1="0" x2="440" y2="130" stroke="#fff" stroke-width="0.5"/>
+  </g>
+
+  <!-- Icon -->
+  <circle cx="52" cy="65" r="36" fill="none" stroke="url(#accentGrad)" stroke-width="1.5" opacity="0.3"/>
+  <circle cx="52" cy="65" r="28" fill="url(#accentGrad)" opacity="0.1"/>
+  <g filter="url(#glow)">
+    <polyline points="36,79 52,47 68,79" fill="none" stroke="url(#accentGrad)" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+    <line x1="44" y1="65" x2="60" y2="65" stroke="url(#accentGrad)" stroke-width="2" stroke-linecap="round" opacity="0.6"/>
+  </g>
+
+  <!-- Wordmark -->
+  <text x="104" y="83" font-family="'Georgia', 'Times New Roman', serif" font-size="46" font-weight="700" letter-spacing="-1" fill="#F0F6FF">IMPRUV</text>
+  <text x="340" y="83" font-family="'Georgia', 'Times New Roman', serif" font-size="46" font-weight="700" letter-spacing="-1" fill="url(#accentGrad)" filter="url(#glow)">.ia</text>
+</svg>

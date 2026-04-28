@@ -1,0 +1,24 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 340 90" width="340" height="90">
+  <defs>
+    <linearGradient id="accentGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#00E5B4;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#00B8FF;stop-opacity:1" />
+    </linearGradient>
+    <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#0D1117;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#161B22;stop-opacity:1" />
+    </linearGradient>
+    <filter id="glow">
+      <feGaussianBlur stdDeviation="3" result="coloredBlur"/>
+      <feMerge>
+        <feMergeNode in="coloredBlur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+  </defs>
+
+  <rect width="340" height="90" rx="12" ry="12" fill="url(#bgGrad)"/>
+
+  <text x="20" y="62" font-family="'Georgia', 'Times New Roman', serif" font-size="46" font-weight="700" letter-spacing="-1" fill="#F0F6FF">IMPRUV</text>
+  <text x="257" y="62" font-family="'Georgia', 'Times New Roman', serif" font-size="46" font-weight="700" letter-spacing="-1" fill="url(#accentGrad)" filter="url(#glow)">.ia</text>
+</svg>

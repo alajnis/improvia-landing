@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 340 90" width="340" height="90">
+  <defs>
+    <linearGradient id="ag" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#009E7E;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#007ACC;stop-opacity:1" />
+    </linearGradient>
+  </defs>
+
+  <rect width="340" height="90" rx="12" ry="12" fill="#FFFFFF"/>
+
+  <text x="20" y="62" font-family="'Georgia', 'Times New Roman', serif" font-size="46" font-weight="700" letter-spacing="-1" fill="#0D1117">IMPRUV</text>
+  <text x="257" y="62" font-family="'Georgia', 'Times New Roman', serif" font-size="46" font-weight="700" letter-spacing="-1" fill="url(#ag)">.ia</text>
+</svg>

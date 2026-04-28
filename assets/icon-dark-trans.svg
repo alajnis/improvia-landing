@@ -1,0 +1,29 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 120 120" width="120" height="120">
+  <defs>
+    <linearGradient id="accentGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#00E5B4;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#00B8FF;stop-opacity:1" />
+    </linearGradient>
+    <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#0D1117;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#161B22;stop-opacity:1" />
+    </linearGradient>
+    <filter id="glow">
+      <feGaussianBlur stdDeviation="3" result="coloredBlur"/>
+      <feMerge>
+        <feMergeNode in="coloredBlur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+  </defs>
+
+  
+
+  <circle cx="60" cy="60" r="44" fill="none" stroke="url(#accentGrad)" stroke-width="1.5" opacity="0.3"/>
+  <circle cx="60" cy="60" r="34" fill="url(#accentGrad)" opacity="0.1"/>
+  <g filter="url(#glow)">
+    <polyline points="40,78 60,38 80,78" fill="none" stroke="url(#accentGrad)" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+    <line x1="50" y1="60" x2="70" y2="60" stroke="url(#accentGrad)" stroke-width="2.5" stroke-linecap="round" opacity="0.6"/>
+  </g>
+</svg>
+

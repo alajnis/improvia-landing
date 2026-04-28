@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 480 130" width="480" height="130">
+  <defs>
+    <linearGradient id="ag" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#009E7E;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#007ACC;stop-opacity:1" />
+    </linearGradient>
+  </defs>
+
+  
+
+  <circle cx="52" cy="65" r="36" fill="none" stroke="url(#ag)" stroke-width="1.5" opacity="0.25"/>
+  <circle cx="52" cy="65" r="28" fill="url(#ag)" opacity="0.08"/>
+  <polyline points="36,79 52,47 68,79" fill="none" stroke="url(#ag)" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+  <line x1="44" y1="65" x2="60" y2="65" stroke="url(#ag)" stroke-width="2" stroke-linecap="round" opacity="0.6"/>
+
+  <text x="104" y="83" font-family="'Georgia', 'Times New Roman', serif" font-size="46" font-weight="700" letter-spacing="-1" fill="#0D1117">IMPRUV</text>
+  <text x="340" y="83" font-family="'Georgia', 'Times New Roman', serif" font-size="46" font-weight="700" letter-spacing="-1" fill="url(#ag)">.ia</text>
+</svg>
+

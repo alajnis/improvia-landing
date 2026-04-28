@@ -21,14 +21,26 @@ htmlEl.setAttribute('data-theme', 'dark');
 
 function applyTheme(theme) {
   htmlEl.setAttribute('data-theme', theme);
+  const navbarLogo = document.getElementById('navbarLogo');
+  const footerLogo = document.getElementById('footerLogo');
+  const favicon    = document.getElementById('favicon');
+
   if (theme === 'light') {
     iconMoon.style.display = 'none';
     iconSun.style.display  = 'block';
     themeToggle.setAttribute('title', 'Cambiar a modo oscuro');
+    
+    if (navbarLogo) navbarLogo.src = 'assets/logo-light-trans.svg';
+    if (footerLogo) footerLogo.src = 'assets/logo-light-trans.svg';
+    if (favicon)    favicon.href   = 'assets/icon-light-trans.svg';
   } else {
     iconMoon.style.display = 'block';
     iconSun.style.display  = 'none';
     themeToggle.setAttribute('title', 'Cambiar a modo claro');
+    
+    if (navbarLogo) navbarLogo.src = 'assets/logo-dark-trans.svg';
+    if (footerLogo) footerLogo.src = 'assets/logo-dark-trans.svg';
+    if (favicon)    favicon.href   = 'assets/icon-dark-trans.svg';
   }
   localStorage.setItem('impruvia-theme', theme);
 }
